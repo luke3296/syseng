@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <HBox alignment="TOP_CENTER" layoutX="47.0" layoutY="126.0" prefHeight="549.0" prefWidth="904.0" spacing="50.0">
+         <children>
+            <VBox fx:id="monVbox" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Text fx:id="monHeading" strokeType="OUTSIDE" strokeWidth="0.0" text="Monday" />
+                  <Pane fx:id="monPane" onMouseClicked="#on1ColClick" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets top="10.0" />
+                     </padding></Pane>
+               </children>
+            </VBox>
+            <VBox fx:id="tueVbox" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Text fx:id="tueHeading" strokeType="OUTSIDE" strokeWidth="0.0" text="Tuesday" />
+                  <Pane fx:id="tuePane" onMouseClicked="#on2ColClick" prefHeight="457.0" prefWidth="86.0" VBox.vgrow="ALWAYS">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets top="10.0" />
+                     </padding></Pane>
+               </children>
+            </VBox>
+            <VBox fx:id="wedVbox" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Text fx:id="wedHeading" strokeType="OUTSIDE" strokeWidth="0.0" text="Wednesday" />
+                  <Pane fx:id="wedPane" onMouseClicked="#on3ColClick" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets top="10.0" />
+                     </padding></Pane>
+               </children>
+            </VBox>
+            <VBox fx:id="thursVbox" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Text fx:id="thursHeading" strokeType="OUTSIDE" strokeWidth="0.0" text="Thursday" />
+                  <Pane fx:id="thursPane" onMouseClicked="#on4ColClick" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets top="10.0" />
+                     </padding></Pane>
+               </children>
+            </VBox>
+            <VBox fx:id="friVbox" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Text fx:id="friHeading" strokeType="OUTSIDE" strokeWidth="0.0" text="Friday" />
+                  <Pane fx:id="friPane" onMouseClicked="#on5ColClick" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets top="10.0" />
+                     </padding></Pane>
+               </children>
+            </VBox>
+            <VBox fx:id="satVbox" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Text fx:id="satHeading" strokeType="OUTSIDE" strokeWidth="0.0" text="Saterday" />
+                  <Pane fx:id="satPane" onMouseClicked="#on6ColClick" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets top="10.0" />
+                     </padding></Pane>
+               </children>
+            </VBox>
+            <VBox fx:id="sunVbox" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Text fx:id="sunHeading" strokeType="OUTSIDE" strokeWidth="0.0" text="Sunday" />
+                  <Pane fx:id="sunPane" onMouseClicked="#on7ColClick" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets top="10.0" />
+                     </padding></Pane>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <ButtonBar layoutX="1.0" layoutY="1.0" prefHeight="38.0" prefWidth="1000.0">
+        <buttons>
+          <Button fx:id="prev" mnemonicParsing="false" onAction="#prevWeek" text="Prev" />
+            <Button fx:id="changeHeading" mnemonicParsing="false" onAction="#updateHeadings" text="add Event" />
+            <Button fx:id="next" mnemonicParsing="false" onAction="#nextWeek" text="Next" />
+        </buttons>
+      </ButtonBar>
+   </children>
+</Pane>
